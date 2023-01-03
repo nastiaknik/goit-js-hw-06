@@ -44,9 +44,9 @@ function createBoxes(amount) {
     coloredBox.classList.add("boxes__item");
     coloredBox.style.backgroundColor = getRandomHexColor();
 
-    const boxSizeCounter = Number(30 + 10 * i);
-    coloredBox.style.width = boxSizeCounter + "px";
-    coloredBox.style.height = coloredBox.style.width;
+    const boxSizeCounter = Number(30 + 10 * i) + "px";
+    coloredBox.style.width = boxSizeCounter;
+    coloredBox.style.height = boxSizeCounter;
 
     elements.push(coloredBox);
     // console.log(elements); // 2 - [ div.boxes__item, div.boxes__item ]

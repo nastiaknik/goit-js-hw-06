@@ -39,8 +39,8 @@ function onFormSubmit(event) {
 
   if (!email || !password) {
     alert('Заповніть, будь-ласка, поля "Email" та "Password" !');
+  } else {
+    console.log(formData);
+    formEl.reset();
   }
-  console.log(formData);
-
-  formEl.reset();
 }
